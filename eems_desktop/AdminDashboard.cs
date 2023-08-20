@@ -54,6 +54,7 @@ namespace eems_desktop
         {
             admin_view_user admin_view_user = new admin_view_user();
             admin_view_user.Show();
+            this.Close();
         }
     }
 }

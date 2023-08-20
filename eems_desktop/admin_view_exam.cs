@@ -209,27 +209,27 @@ namespace eems_desktop
                     {
                         connection.Open();
 
-                        // Insert a new exam record into tbl_exam based on user input
+                       
                         string insertQuery = "INSERT INTO tbl_exam (ExamName, ClassID, StartDateTime, EndDateTime, Duration, AutoStop, StatusID) " +
                                              "VALUES (@ExamName, @ClassID, @StartDateTime, @EndDateTime, @Duration, @AutoStop, @StatusID)";
                         using (SqlCommand command = new SqlCommand(insertQuery, connection))
                         {
-                            // Set parameter values based on user input
+                        
                             command.Parameters.AddWithValue("@ExamName", txtExamName.Text);
                             ComboBoxItem selectedClassItem = (ComboBoxItem)cbxClassID.SelectedItem;
                             int selectedClassId = selectedClassItem.Value;
                             command.Parameters.AddWithValue("@ClassID", selectedClassId);
                             command.Parameters.AddWithValue("@StartDateTime", dtpStart.Value);
                             command.Parameters.AddWithValue("@EndDateTime", dtpEnd.Value);
-                            command.Parameters.AddWithValue("@Duration", Convert.ToInt32(txtDuration.Text)); // Get duration from TextBox
+                            command.Parameters.AddWithValue("@Duration", Convert.ToInt32(txtDuration.Text)); 
                             int selectedStatusId = ((ComboBoxItem)cbxStatus.SelectedItem).Value;
                             command.Parameters.AddWithValue("@StatusID", selectedStatusId);
 
-                            // Determine the selected AutoStop value based on radio button selection
-                            int autoStopValue = 0; // Default to Off
+                           
+                            int autoStopValue = 0; 
                             if (radioBtnOn.Checked)
                             {
-                                autoStopValue = 1; // Set to On
+                                autoStopValue = 1;
                             }
                             command.Parameters.AddWithValue("@AutoStop", autoStopValue);
 
@@ -301,10 +301,10 @@ namespace eems_desktop
                         int selectedStatusId = ((ComboBoxItem)cbxStatus.SelectedItem).Value;
                         command.Parameters.AddWithValue("@StatusID", selectedStatusId);
 
-                        int autoStopValue = 0; // Default to Off
+                        int autoStopValue = 0; 
                         if (radioBtnOn.Checked)
                         {
-                            autoStopValue = 1; // Set to On
+                            autoStopValue = 1; 
                         }
                         command.Parameters.AddWithValue("@AutoStop", autoStopValue);
 
@@ -314,8 +314,8 @@ namespace eems_desktop
                         {
                             MessageBox.Show("Exam updated successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                            // Refresh the DataGridView
-                            LoadExams(); // Call the method that populates the DataGridView
+                        
+                            LoadExams(); 
                         }
                         else
                         {
@@ -348,7 +348,6 @@ namespace eems_desktop
 
                 int statusId = Convert.ToInt32(row.Cells["StatusID"].Value);
 
-                // Find the corresponding ComboBoxItem in cbxStatus and set it as the selected item
                 foreach (ComboBoxItem item in cbxStatus.Items)
                 {
                     if (item.Value == statusId)
@@ -370,7 +369,7 @@ namespace eems_desktop
 
                 txtDuration.Text = row.Cells["Duration"].Value.ToString();
 
-                // Rest of your code...
+                
             }
         }
 
@@ -379,6 +378,46 @@ namespace eems_desktop
         private void ClassInfo_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnClass_Click(object sender, EventArgs e)
+        {
+            admin_view_class admin_view_class = new admin_view_class();
+            admin_view_class.Show();
+
+            this.Close();
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+            admin_view_user admin_view_user = new admin_view_user();
+            admin_view_user.Show();
+
+            this.Close();
+        }
+
+        private void btnExam_Click(object sender, EventArgs e)
+        {
+            admin_view_exam admin_view_exam = new admin_view_exam();
+            admin_view_exam.Show();
+
+            this.Close();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Login Login = new Login();
+            Login.Show();
+
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int selectedExamId = Convert.ToInt32(table.CurrentRow.Cells["ExamID"].Value);
+            admin_view_result viewExamResultForm = new admin_view_result(selectedExamId);
+            viewExamResultForm.Show();
+            this.Close();
         }
     }
     

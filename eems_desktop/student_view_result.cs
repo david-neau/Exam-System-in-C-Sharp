@@ -16,5 +16,10 @@ namespace eems_desktop
         {
             InitializeComponent();
         }
+
+        private void dataGridViewUsers_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -139,7 +139,7 @@ namespace eems_desktop
                         "SELECT a.AttemptID, e.ExamName, a.UserID " +
                         "FROM tbl_attempt a " +
                         "INNER JOIN tbl_exam e ON a.ExamID = e.ExamID " +
-                        "WHERE a.UserID = @UserID";
+                        "WHERE a.UserID = @UserID ORDER By AttemptID DESC";
 
                     using (SqlCommand command = new SqlCommand(attemptHistoryQuery, connection))
                     {

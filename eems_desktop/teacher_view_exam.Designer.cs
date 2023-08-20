@@ -28,14 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button7 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.button6 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,45 +49,14 @@
             this.txtFirstname = new System.Windows.Forms.TextBox();
             this.lblFirstname = new System.Windows.Forms.Label();
             this.table = new System.Windows.Forms.DataGridView();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(8, 416);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(144, 24);
-            this.button7.TabIndex = 109;
-            this.button7.Text = "Logout";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 13);
-            this.label3.TabIndex = 108;
-            this.label3.Text = "EEMS";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(8, 96);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(144, 23);
-            this.button5.TabIndex = 107;
-            this.button5.Text = "Exam";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(8, 64);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(144, 23);
-            this.button3.TabIndex = 106;
-            this.button3.Text = "User";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -124,15 +88,6 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "On";
             this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(8, 32);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(144, 23);
-            this.button6.TabIndex = 105;
-            this.button6.Text = "Class";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -292,11 +247,56 @@
             this.table.Size = new System.Drawing.Size(632, 216);
             this.table.TabIndex = 86;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(8, 32);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(144, 23);
+            this.button6.TabIndex = 105;
+            this.button6.Text = "Class";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(8, 64);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(144, 23);
+            this.button3.TabIndex = 106;
+            this.button3.Text = "User";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(8, 96);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(144, 23);
+            this.button5.TabIndex = 107;
+            this.button5.Text = "Exam";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 8);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(37, 13);
+            this.label3.TabIndex = 108;
+            this.label3.Text = "EEMS";
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(8, 416);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(144, 24);
+            this.button7.TabIndex = 109;
+            this.button7.Text = "Logout";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
             // teacher_view_exam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1282, 663);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button5);
@@ -333,15 +333,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label5;
@@ -360,5 +354,10 @@
         private System.Windows.Forms.TextBox txtFirstname;
         private System.Windows.Forms.Label lblFirstname;
         private System.Windows.Forms.DataGridView table;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button7;
     }
 }

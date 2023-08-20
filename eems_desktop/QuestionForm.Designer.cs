@@ -40,19 +40,27 @@
             // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(550, 374);
+            this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubmit.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(800, 512);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.Size = new System.Drawing.Size(80, 31);
             this.btnSubmit.TabIndex = 9;
             this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click_1);
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(550, 342);
+            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNext.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.btnNext.Location = new System.Drawing.Point(800, 472);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.Size = new System.Drawing.Size(80, 31);
             this.btnNext.TabIndex = 8;
             this.btnNext.Text = "Next";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -60,9 +68,11 @@
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(467, 344);
+            this.btnPrevious.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPrevious.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.btnPrevious.Location = new System.Drawing.Point(712, 472);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(75, 23);
+            this.btnPrevious.Size = new System.Drawing.Size(80, 31);
             this.btnPrevious.TabIndex = 7;
             this.btnPrevious.Text = "Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
@@ -70,30 +80,40 @@
             // 
             // flowLayoutPanelOptions
             // 
+            this.flowLayoutPanelOptions.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flowLayoutPanelOptions.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanelOptions.Location = new System.Drawing.Point(187, 184);
+            this.flowLayoutPanelOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.flowLayoutPanelOptions.Location = new System.Drawing.Point(376, 168);
             this.flowLayoutPanelOptions.Name = "flowLayoutPanelOptions";
-            this.flowLayoutPanelOptions.Size = new System.Drawing.Size(437, 156);
+            this.flowLayoutPanelOptions.Size = new System.Drawing.Size(504, 296);
             this.flowLayoutPanelOptions.TabIndex = 6;
             this.flowLayoutPanelOptions.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanelOptions_Paint);
             // 
             // lblQuestion
             // 
-            this.lblQuestion.Location = new System.Drawing.Point(184, 80);
+            this.lblQuestion.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblQuestion.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.lblQuestion.Location = new System.Drawing.Point(376, 56);
             this.lblQuestion.Name = "lblQuestion";
-            this.lblQuestion.Size = new System.Drawing.Size(443, 95);
+            this.lblQuestion.Size = new System.Drawing.Size(504, 95);
             this.lblQuestion.TabIndex = 10;
             // 
             // timer1
             // 
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // lblTimer
             // 
-            this.lblTimer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimer.Location = new System.Drawing.Point(344, 8);
+            this.lblTimer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTimer.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimer.Location = new System.Drawing.Point(0, 0);
             this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(100, 23);
+            this.lblTimer.Size = new System.Drawing.Size(1264, 48);
             this.lblTimer.TabIndex = 11;
             this.lblTimer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -101,13 +121,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.lblTimer);
             this.Controls.Add(this.lblQuestion);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.flowLayoutPanelOptions);
+            this.MinimumSize = new System.Drawing.Size(1280, 720);
             this.Name = "QuestionForm";
             this.Text = "QuestionForm";
             this.Load += new System.EventHandler(this.QuestionForm_Load);

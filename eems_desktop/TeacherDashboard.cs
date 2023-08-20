@@ -212,6 +212,11 @@ namespace eems_desktop
         }
         private void btnInsert_Click(object sender, EventArgs e)
         {
+
+            ComboBoxItem selectedClassItem = (ComboBoxItem)cbxClassID.SelectedItem;
+            
+            if (selectedClassItem != null) {
+           
             try
             {
                 using (SqlConnection connection = db.GetConnection())
@@ -225,9 +230,8 @@ namespace eems_desktop
                     using (SqlCommand command = new SqlCommand(insertQuery, connection))
                     {
                         command.Parameters.AddWithValue("@ExamName", txtExamName.Text);
-                        ComboBoxItem selectedClassItem = (ComboBoxItem)cbxClassID.SelectedItem;
-                        int selectedClassId = selectedClassItem.Value;
-                        command.Parameters.AddWithValue("@ClassID", selectedClassId);
+                            int selectedClassId = selectedClassItem.Value;
+                            command.Parameters.AddWithValue("@ClassID", selectedClassId);
                         command.Parameters.AddWithValue("@StartDateTime", dtpStart.Value);
                         command.Parameters.AddWithValue("@EndDateTime", dtpEnd.Value);
                         command.Parameters.AddWithValue("@Duration", Convert.ToInt32(txtDuration.Text)); // Get duration from TextBox
@@ -251,6 +255,11 @@ namespace eems_desktop
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Class not selected.");
             }
         }
 
@@ -411,6 +420,35 @@ namespace eems_desktop
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void btnViewResults_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (!string.IsNullOrEmpty(selectExamID.Text))
+                {
+                    int examId = Convert.ToInt32(selectExamID.Text);
+
+                    teacher_view_exam_result examQuestionForm = new teacher_view_exam_result(userId,examId);
+                    examQuestionForm.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Please select an exam to view result for.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

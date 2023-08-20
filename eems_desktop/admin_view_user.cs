@@ -350,5 +350,37 @@ namespace eems_desktop
             string filterValue = txtUsername.Text;
             (table.DataSource as DataTable).DefaultView.RowFilter = $"Username LIKE '%{filterValue}%'";
         }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            Login Login = new Login();
+            Login.Show();
+
+            this.Close();
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            admin_view_exam admin_view_exam = new admin_view_exam();
+            admin_view_exam.Show();
+
+            this.Close();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            admin_view_user admin_view_user = new admin_view_user();
+            admin_view_user.Show();
+
+            this.Close();
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            admin_view_class admin_view_class = new admin_view_class();
+            admin_view_class.Show();
+
+            this.Close();
+        }
     }
 }

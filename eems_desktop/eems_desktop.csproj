@@ -139,12 +139,6 @@
     <Compile Include="student_view_exam.Designer.cs">
       <DependentUpon>student_view_exam.cs</DependentUpon>
     </Compile>
-    <Compile Include="student_view_form.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="student_view_form.Designer.cs">
-      <DependentUpon>student_view_form.cs</DependentUpon>
-    </Compile>
     <Compile Include="student_view_result.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +181,12 @@
     <Compile Include="teacher_view_exam_question.Designer.cs">
       <DependentUpon>teacher_view_exam_question.cs</DependentUpon>
     </Compile>
+    <Compile Include="teacher_view_exam_result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacher_view_exam_result.Designer.cs">
+      <DependentUpon>teacher_view_exam_result.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="add_new_question.resx">
       <DependentUpon>add_new_question.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +225,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QuestionForm.resx">
       <DependentUpon>QuestionForm.cs</DependentUpon>
@@ -240,9 +241,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="student_view_exam.resx">
       <DependentUpon>student_view_exam.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="student_view_form.resx">
-      <DependentUpon>student_view_form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="student_view_result.resx">
       <DependentUpon>student_view_result.cs</DependentUpon>
@@ -265,6 +263,9 @@
     <EmbeddedResource Include="teacher_view_exam_question.resx">
       <DependentUpon>teacher_view_exam_question.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="teacher_view_exam_result.resx">
+      <DependentUpon>teacher_view_exam_result.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -277,6 +278,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mche-lee-PC91Jm1DlWA-unsplash %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-class-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-class-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exam-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-door-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

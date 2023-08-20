@@ -22,7 +22,6 @@ C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.ad
 C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.edit_question.resources
 C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.student_view_class.resources
 C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.student_view_class_exam.resources
-C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.student_view_form.resources
 C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.teacher_view_class.resources
 C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.teacher_view_class_exam.resources
 C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.teacher_view_enrollment.resources
@@ -31,3 +30,4 @@ C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.te
 C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.admin_view_class.resources
 C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.QuestionForm.resources
 C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.AttemptResult.resources
+C:\Users\LENOVO\source\repos\eems_desktop\eems_desktop\obj\Debug\eems_desktop.teacher_view_exam_result.resources
